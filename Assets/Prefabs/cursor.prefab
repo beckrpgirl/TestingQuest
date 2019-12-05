@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7068505250975549507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7068505250975549517}
+  - component: {fileID: 7068505250975549516}
+  m_Layer: 0
+  m_Name: cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7068505250975549517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7068505250975549507}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 267.08884, y: 0.95519, z: 197.11652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7068505250975549516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7068505250975549507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f24cc23a231f3ad4a9043e09a1b9d676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconArrow: {fileID: 2800000, guid: 8ea795c067613354898068091ffc7130, type: 3}
+  arrowRegPoint: {x: 0, y: 0}
+  iconAttack: {fileID: 2800000, guid: 2d18e23e3ce249b4489b8bcdd02d3f48, type: 3}
+  attackingRegPoint: {x: 0, y: 0}
+  iconTalk: {fileID: 2800000, guid: 96d4bfdb0d6d8c042bf8fccf6524d239, type: 3}
+  talkRegPoint: {x: 0, y: 0}
+  iconInteract: {fileID: 2800000, guid: 8ea795c067613354898068091ffc7130, type: 3}
+  interactRegPoint: {x: 0, y: 0}
+  iconQuestionMark: {fileID: 2800000, guid: fe2443101ded6f544b32f8dc8690c367, type: 3}
+  QuestionRegPoint: {x: 0, y: 0}
+  iconExclamation: {fileID: 2800000, guid: cecad95c851b97f40b105b30b0bfede3, type: 3}
+  ExclamationRegPoint: {x: 0, y: 0}
