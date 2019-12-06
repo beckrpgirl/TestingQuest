@@ -1,7 +1,15 @@
-﻿using System.Collections;
+﻿//FILE : Quest.cs
+//PROJECT : Will of the Woods
+//PROGRAMMER : Rebecca Stewart
+//FIRST VERSION : 06/12/2019
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+
+//NAME : Quest
+//PURPOSE : the Parent to the different types of quests. 
 public abstract class Quest : MonoBehaviour
 {
     public QuestUIManager QUIM;
@@ -19,6 +27,10 @@ public abstract class Quest : MonoBehaviour
     public int CoinReward { get; set; }
 
 
+//FUNCTION : Anything Text
+//DESCRIPTION : Allowing the quests to pass text into the UI
+//PARAMETERS : 
+//RETURNS : 
     public abstract void StartText();
     public abstract void TrackingQuest();
     public abstract void InprogressText();
@@ -31,15 +43,11 @@ public abstract class Quest : MonoBehaviour
         alison = FindObjectOfType<Alison>();
 
     }
-    public void CheckGoals()
-    {
-        
-        //code to check all tasks are done... isn't working for some reason. 
-        //Completed = Goals.All(g => g.Completed);
 
-
-    }
-
+//FUNCTION : GiveReward
+//DESCRIPTION : gives the player the reward for the quest
+//PARAMETERS : 
+//RETURNS : 
     public void GiveReward()
     {
         if (alison)

@@ -151,7 +151,7 @@ public abstract class BaseEnemy : MonoBehaviour, IQuestID
         gameObject.SetActive(false);
         if (isDead == true)
         {
-            Done();
+            Cleared();
             isDead = false;
             Invoke("Reset", 2);
         }
@@ -215,8 +215,8 @@ public abstract class BaseEnemy : MonoBehaviour, IQuestID
         }
     }
 
-    public void Done()
+    public void Cleared()
     {
-        QuestEvents.EnemyDied(this);
+        QuestEvents.ItemCleared(this);
     }
 }

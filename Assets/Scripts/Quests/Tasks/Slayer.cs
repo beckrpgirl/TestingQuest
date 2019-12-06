@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Slayer : Quest
 {
+    //create section with areas for all text to be selected here.
+    //look into making this part into a scriptable object. 
 
     private void Awake()
     {

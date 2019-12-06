@@ -26,7 +26,7 @@ public class Wood : BaseCollectible, IQuestID
         if (other.gameObject.tag == "Player")
         {
             gameObject.SetActive(false);
-            Done();
+            Cleared();
         }
         this.Invoke("reset", duration);
 
@@ -36,9 +36,9 @@ public class Wood : BaseCollectible, IQuestID
     {
         gameObject.SetActive(true);
     }
-    public void Done()
+    public void Cleared()
     {
-        QuestEvents.EnemyDied(this);
+        QuestEvents.ItemCleared(this);
     }
    
 }

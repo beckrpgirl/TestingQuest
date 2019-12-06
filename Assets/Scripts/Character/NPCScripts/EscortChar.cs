@@ -50,7 +50,7 @@ public class EscortChar : NPCController, IQuestID
 
         if (other.gameObject.tag == "Home")
         {
-            Done();
+            Cleared();
             Finished = true;
         }
     }
@@ -62,9 +62,9 @@ public class EscortChar : NPCController, IQuestID
 
     }
 
-    public void Done()
+    public void Cleared()
     {
-        QuestEvents.EnemyDied(this);
+        QuestEvents.ItemCleared(this);
     }
 
 }

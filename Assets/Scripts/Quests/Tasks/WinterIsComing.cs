@@ -17,6 +17,7 @@ public class WinterIsComing : Quest
         CoinReward = 100;
 
         Goals.Add(new CollectingQuest(this, "wood", "Gather up " + RequiredAmount + " wood", false, CurrentAmount, RequiredAmount, CoinReward));
+        Goals.Add(new KillQuest(this, NPCID, "Kill " + RequiredAmount + " Bandits", false, CurrentAmount, RequiredAmount, CoinReward));
 
 
         Goals.ForEach(g => g.Init());
