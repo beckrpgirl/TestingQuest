@@ -20,7 +20,8 @@ public abstract class Quest : MonoBehaviour
     public string QuestName { get; set; }
     public string Description { get; set; }
     public string NPCID { get; set; }
-    public int ExperenceReward { get; set; }  
+    public int ExperenceReward { get; set; }
+    public bool currentQuest { get; set; }
     public bool Completed { get; set; }
     public int RequiredAmount { get; set; }
     public int CurrentAmount { get; set; }
