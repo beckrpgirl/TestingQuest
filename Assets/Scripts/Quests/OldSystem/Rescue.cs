@@ -17,7 +17,7 @@ public class Rescue : Quest
         CurrentAmount = 0;
         CoinReward = 100;
 
-        Goals.Add(new EscortQuest(this, NPCID, "Escort Billy back to the village", false, CurrentAmount, RequiredAmount, CoinReward));
+        //Goals.Add(new EscortQuest(this, NPCID, "Escort Billy back to the village", false, CurrentAmount, RequiredAmount, CoinReward));
 
 
         Goals.ForEach(g => g.Init());

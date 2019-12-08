@@ -7,7 +7,7 @@ public class EscortQuest : QuestGoal
 
     public string EnemyID { get; set; }
 
-    public EscortQuest(Quest quest, string enemyID, string description, bool completed, int currentAmount, int requiredAmount, int coins)
+    public EscortQuest(Quests quest, string enemyID, string description, bool completed, int currentAmount, int requiredAmount, int coins)
     {
         this.Quest = quest;
         this.EnemyID = enemyID;

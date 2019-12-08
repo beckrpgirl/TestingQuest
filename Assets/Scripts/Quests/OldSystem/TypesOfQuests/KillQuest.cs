@@ -6,7 +6,7 @@ public class KillQuest : QuestGoal
 {
     public string EnemyID { get; set; }
 
-    public KillQuest(Quest quest, string enemyID, string description, bool completed, int currentAmount, int requiredAmount, int coins)
+    public KillQuest(Quests quest, string enemyID, string description, bool completed, int currentAmount, int requiredAmount, int coins)
     {
         this.Quest = quest;
         this.EnemyID = enemyID;

@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WinterIsComing : Quest
+public class Slayer : Quest
 {
-    // Start is called before the first frame update
+    //create section with areas for all text to be selected here.
+    //look into making this part into a scriptable object. 
     private void Awake()
     {
         QUIM = FindObjectOfType<QuestUIManager>();
 
-        QuestName = "Winter Wooderland";
-        Description = "Collect wood";
+        QuestName = "Bandit Basher";
+        Description = "Clear out the bandit camp";
+        NPCID = "Enemy";
         ExperenceReward = 100;
-        RequiredAmount = 6;
+        RequiredAmount = 4;
         CurrentAmount = 0;
         CoinReward = 100;
 
-        Goals.Add(new CollectingQuest(this, "wood", "Gather up " + RequiredAmount + " wood", false, CurrentAmount, RequiredAmount, CoinReward));
-        Goals.Add(new KillQuest(this, NPCID, "Kill " + RequiredAmount + " Bandits", false, CurrentAmount, RequiredAmount, CoinReward));
+        //Goals.Add(new KillQuest(this, NPCID, "Kill " + RequiredAmount + " Bandits", false, CurrentAmount, RequiredAmount, CoinReward));
 
 
         Goals.ForEach(g => g.Init());
@@ -29,7 +30,7 @@ public class WinterIsComing : Quest
         if (QUIM)
         {
             QUIM.NPCBoxOne.text = "Welcome Alison,";
-            QUIM.NPCBoxTwo.text = "Winter is Coming, the town needs fire wood to brave the coming cold, collect " + RequiredAmount + " of logs from the nearby woods";
+            QUIM.NPCBoxTwo.text = "There is a group of bandits camped near us, can you deal with them?";
         }
         TrackingQuest();
     }
@@ -38,8 +39,8 @@ public class WinterIsComing : Quest
     {
         if (QUIM)
         {
-            QUIM.TextDetails.text = "Collect " + RequiredAmount + " wood";
-            QUIM.TextTally.text = CurrentAmount + " / " + RequiredAmount;
+            QUIM.TextDetails.text = "Clear out the bandit camp";
+            QUIM.TextTally.text = this.CurrentAmount + " / " + RequiredAmount;
         }
     }
     public override void InprogressText()
@@ -47,7 +48,7 @@ public class WinterIsComing : Quest
         if (QUIM)
         {
             QUIM.NPCBoxOne.text = "Hello Alison";
-            QUIM.NPCBoxTwo.text = "Have you had any luck getting the wood?";
+            QUIM.NPCBoxTwo.text = "Have you had any luck defeating those bandits?";
         }
     }
     public override void CompletedText()
@@ -55,7 +56,7 @@ public class WinterIsComing : Quest
         if (QUIM)
         {
             QUIM.NPCBoxOne.text = "Thank you for your help!";
-            QUIM.NPCBoxTwo.text = "We shall not need any more wood.";
+            QUIM.NPCBoxTwo.text = "You have saved our village.";
             QUIM.TextDetails.text = "No Current Quest";
             QUIM.TextTally.text = "  ";
         }

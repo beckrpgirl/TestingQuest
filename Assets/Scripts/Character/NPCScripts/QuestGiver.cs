@@ -11,10 +11,12 @@ public class QuestGiver : NPCController
     [SerializeField]
     private GameObject quests;
 
-    public string[] QuestNames;
+    public List<Quests> QuestList = new List<Quests>();
+
+    //public string[] QuestNames;
     int i = 0;
 
-    public Quest Quest { get; set; }
+    public Quests Quest { get; set; }
 
     void Awake()
     {
@@ -48,7 +50,9 @@ public class QuestGiver : NPCController
     void AssignQuest()
     {
         AssignedQuest = true;
-        Quest = (Quest)quests.AddComponent(System.Type.GetType(QuestNames[i]));
+        //Quest = (Quest)quests.AddComponent(System.Type.GetType(QuestNames[i]));
+        Quest = QuestList[i];
+        Quest.Load();
         Quest.StartText();
     }
 
@@ -71,7 +75,7 @@ public class QuestGiver : NPCController
     void NextQuest()
     {
         i++;
-        if (i >= QuestNames.Length)
+        if (i >= QuestList.Count)
         {
             NoMoreQuest();
         }

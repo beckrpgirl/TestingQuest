@@ -6,7 +6,7 @@ public class CollectingQuest : QuestGoal
 {
     public string ItemID { get; set; }
 
-    public CollectingQuest(Quest quest, string itemID, string description, bool completed, int currentAmount, int requiredAmount, int coins)
+    public CollectingQuest(Quests quest, string itemID, string description, bool completed, int currentAmount, int requiredAmount, int coins)
     {
         this.Quest = quest;
         this.ItemID = itemID;

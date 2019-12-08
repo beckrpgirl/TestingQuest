@@ -11,7 +11,7 @@ using UnityEngine;
 //PURPOSE : The base of what all quest goals are build off of. 
 public class QuestGoal
 {
-    public Quest Quest { get; set; }
+    public Quests Quest { get; set; }
     public string Description { get; set; }
     public bool Completed { get; set; }
     public int CurrentAmount { get; set; }
