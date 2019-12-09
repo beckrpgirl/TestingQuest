@@ -12,6 +12,7 @@ public class QuestGiver : NPCController
 {
     //UI and Quests.cs to link to
     QuestUIManager QUIM;
+    QuestManager QM;
     public Quests Quest { get; set; }
     public bool AssignedQuest { get; set; } //Has quest been assigned
     public bool Helped { get; set; } //quest to hand in
@@ -22,6 +23,7 @@ public class QuestGiver : NPCController
     void Awake()
     {
         QUIM = FindObjectOfType<QuestUIManager>();
+        QM = FindObjectOfType<QuestManager>();
     }
     //Interact function from the NPC controller.
     public override void Interact()
@@ -52,10 +54,17 @@ public class QuestGiver : NPCController
 //DESCRIPTION : Assigns the quest to the player if needed
     void AssignQuest()
     {
-        AssignedQuest = true;
+        
         Quest = QuestList[i];
-        Quest.Load();
-        Quest.StartText();
+        //checking to see if valid 
+        if (QM.searchCQNList(QuestList[i].PreviousQuestName))
+        {
+            AssignedQuest = true;
+            Quest.Load();
+            Quest.StartText();
+        }
+        else
+           NoMoreQuest();
     }
 
 //FUNCTION : CheckQuest
@@ -67,6 +76,7 @@ public class QuestGiver : NPCController
             Quest.GiveReward();
             Helped = true;
             AssignedQuest = false;
+            QM.addToCQNList(Quest.QuestName);
             Quest.CompletedText();
 
         }

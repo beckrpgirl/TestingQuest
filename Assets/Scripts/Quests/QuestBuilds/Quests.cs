@@ -28,6 +28,7 @@ public class Quests : ScriptableObject
     //Changeable in script able list
     public string QuestName;
     public string Description;
+    public string PreviousQuestName;
     public string NPCID;
     public int ExperenceReward;
     public int RequiredAmount;

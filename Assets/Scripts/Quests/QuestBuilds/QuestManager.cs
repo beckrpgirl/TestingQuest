@@ -9,7 +9,7 @@ using UnityEngine;
 
 //NAME : QuestManager
 //PURPOSE :Checks to see what Quests have been done and what quests can be unlocked because of the completed quests. 
-public class QuestManager
+public class QuestManager: MonoBehaviour
 {
     public List<string> completedQuestNames;
     private bool isMatch = false;
