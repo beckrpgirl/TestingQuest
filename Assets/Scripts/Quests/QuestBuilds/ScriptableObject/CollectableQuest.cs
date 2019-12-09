@@ -1,18 +1,20 @@
-﻿//FILE : KillableQuest.cs
+﻿//FILE : CollectableQuest.cs
 //PROJECT : Will of the Woods
 //PROGRAMMER : Rebecca Stewart
 //FIRST VERSION : 06/12/2019
 
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Quest", menuName = "Quests/Escort")]
-public class EscortQuests : Quests
+[CreateAssetMenu(fileName = "New Quest", menuName = "Quests/Collectable")]
+//NAME : CollectableQuest
+//PURPOSE : Holds the requirments for the collectable quest
+public class CollectableQuest : Quests
 {
     public override void Load()
     {
         CurrentAmount = 0;
         Completed = false;
-        Goals.Add(new KillQuest(this, NPCID, "Kill " + RequiredAmount + " " + NPCID, false, CurrentAmount, RequiredAmount, CoinReward));
+        Goals.Add(new CollectingQuest(this, NPCID, "Kill " + RequiredAmount + " " + NPCID, false, CurrentAmount, RequiredAmount, CoinReward));
         Goals.ForEach(g => g.Init());
     }
 

@@ -34,9 +34,13 @@ public class Quests : ScriptableObject
     public int CoinReward;
 
     //Descriptions of text
+    [TextArea(3,10)]
     public string StartQuestText;
+    [TextArea(3, 10)]
     public string TrackingQuestText;
+    [TextArea(3, 10)]
     public string InprogressQuestText;
+    [TextArea(3, 10)]
     public string CompletedQuestText;
 
 

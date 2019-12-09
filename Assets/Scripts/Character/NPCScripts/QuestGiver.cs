@@ -1,28 +1,29 @@
-﻿using System.Collections;
+﻿//FILE : QuestGiver.cs
+//PROJECT : Will of the Woods
+//PROGRAMMER : Rebecca Stewart
+//FIRST VERSION : 06/12/2019
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//NAME : QuestGiver
+//PURPOSE : Controls the handing out and dialog of the character. 
 public class QuestGiver : NPCController
 {
+    //UI and Quests.cs to link to
     QuestUIManager QUIM;
-    public bool AssignedQuest { get; set; }
-    public bool Helped { get; set; } //quest to hand in
-
-    [SerializeField]
-    private GameObject quests;
-
-    public List<Quests> QuestList = new List<Quests>();
-
-    //public string[] QuestNames;
-    int i = 0;
-
     public Quests Quest { get; set; }
+    public bool AssignedQuest { get; set; } //Has quest been assigned
+    public bool Helped { get; set; } //quest to hand in
+    public List<Quests> QuestList = new List<Quests>(); //List of quests for NPC
+    int i = 0; //quest counter
+
 
     void Awake()
     {
         QUIM = FindObjectOfType<QuestUIManager>();
-
     }
+    //Interact function from the NPC controller.
     public override void Interact()
     {
         
@@ -47,15 +48,18 @@ public class QuestGiver : NPCController
 
     }
 
+//FUNCTION : AssignedQuest
+//DESCRIPTION : Assigns the quest to the player if needed
     void AssignQuest()
     {
         AssignedQuest = true;
-        //Quest = (Quest)quests.AddComponent(System.Type.GetType(QuestNames[i]));
         Quest = QuestList[i];
         Quest.Load();
         Quest.StartText();
     }
 
+//FUNCTION : CheckQuest
+//DESCRIPTION : Checking to see if quest is done or not and assigning the correct dialoge/action
     void CheckQuest()
     {
         if(Quest.Completed)
@@ -72,6 +76,8 @@ public class QuestGiver : NPCController
         }
     }
 
+//FUNCTION : NextQuest
+//DESCRIPTION : Calls the next quest in the line when the player revisits the questGiver
     void NextQuest()
     {
         i++;
@@ -88,6 +94,8 @@ public class QuestGiver : NPCController
         }
     }
 
+//FUNCTION : NoMoreQuest
+//DESCRIPTION : Calls the dialog if no more quests are to be found
     void NoMoreQuest()
     {
         if (QUIM)
@@ -97,6 +105,8 @@ public class QuestGiver : NPCController
         }
     }
 
+//FUNCTION : OnTriggerExit
+//DESCRIPTION : closes UI when player is out of range
     void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")

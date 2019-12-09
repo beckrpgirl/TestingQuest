@@ -1,18 +1,20 @@
-﻿//FILE : KillableQuest.cs
+﻿//FILE : EscortQuests.cs
 //PROJECT : Will of the Woods
 //PROGRAMMER : Rebecca Stewart
 //FIRST VERSION : 06/12/2019
 
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Quest", menuName = "Quests/Collectable")]
-public class CollectableQuest : Quests
+[CreateAssetMenu(fileName = "New Quest", menuName = "Quests/Escort")]
+//NAME : EscortQuests
+//PURPOSE : Set up for the escort quests. 
+public class EscortQuests : Quests
 {
     public override void Load()
     {
         CurrentAmount = 0;
         Completed = false;
-        Goals.Add(new KillQuest(this, NPCID, "Kill " + RequiredAmount + " " + NPCID, false, CurrentAmount, RequiredAmount, CoinReward));
+        Goals.Add(new EscortQuest(this, NPCID, "Kill " + RequiredAmount + " " + NPCID, false, CurrentAmount, RequiredAmount, CoinReward));
         Goals.ForEach(g => g.Init());
     }
 
