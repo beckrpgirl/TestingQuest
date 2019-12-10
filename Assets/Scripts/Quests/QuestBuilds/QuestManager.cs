@@ -19,7 +19,8 @@ public class QuestManager: MonoBehaviour
     //RETURNS : None()
     public void Awake()
     {
-        completedQuestNames[0] = "NULL";
+        addToCQNList("NULL");
+        //completedQuestNames[0] = "NULL";
     }
     public bool searchCQNList(string name)
     {
@@ -28,6 +29,7 @@ public class QuestManager: MonoBehaviour
             if(name == completedQuestNames[i])
             {
                 isMatch = true;
+                break;
             }
         }
         return isMatch;
@@ -39,5 +41,6 @@ public class QuestManager: MonoBehaviour
     public void addToCQNList(string addName)
     {
         completedQuestNames.Add(addName);
+        Debug.Log(addName);
     }
 }

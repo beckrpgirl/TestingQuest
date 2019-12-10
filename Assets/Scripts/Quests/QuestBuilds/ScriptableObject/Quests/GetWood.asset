@@ -16,6 +16,7 @@ MonoBehaviour:
   alison: {fileID: 0}
   QuestName: Woods
   Description: collecting
+  PreviousQuestName: NULL
   NPCID: wood
   ExperenceReward: 0
   RequiredAmount: 3
