@@ -15,11 +15,11 @@ public class QuestUIManager : MonoBehaviour
     public GameObject ToggleButtonB;
     bool toggle = true;
 
-    QuestGiver QG;
+    QuestGiverScript QGS;
 
     void Start()
     {
-        QG = FindObjectOfType<QuestGiver>();
+        QGS = FindObjectOfType<QuestGiverScript>();
 
        NoQuestFound();
     }
@@ -27,8 +27,8 @@ public class QuestUIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (QG && QG.AssignedQuest)
-            QG.Quest.TrackingQuest();
+        if (QGS && QGS.AssignedQuest)
+            QGS.Quest.TrackingQuest();
         else
             NoQuestFound();
     }
