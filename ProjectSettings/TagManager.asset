@@ -14,6 +14,7 @@ TagManager:
   - PlayerWeapon
   - EnemyWeapon
   - Ground
+  - QuestGiver2
   layers:
   - Default
   - TransparentFX

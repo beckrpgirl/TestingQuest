@@ -55,7 +55,10 @@ public class EscortChar : NPCController, IQuestID
         }
     }
 
+    public override void InteractMouse()
+    { 
 
+    }
 
     public override void Interact()
     {

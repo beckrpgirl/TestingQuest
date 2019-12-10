@@ -19,7 +19,10 @@ public class ShopNPC : NPCController
    
     }
 
+    public override void InteractMouse()
+    {
 
+    }
     public override void Interact()
     {
 

@@ -7,7 +7,7 @@ public abstract class NPCController : MonoBehaviour
 
     public GameObject QuestTextBox;
     public GameObject ShopTextBox;
-    bool NPCClick = false;
+    public bool NPCClick = false;
 
     public Transform Alison;
     
@@ -28,7 +28,7 @@ public abstract class NPCController : MonoBehaviour
     }
 
     //Interactions with NPC
-    void QuestGiverMenuOn()
+    public void QuestGiverMenuOn()
     {
         QuestTextBox.SetActive(true);
         NPCClick = true;
@@ -40,40 +40,47 @@ public abstract class NPCController : MonoBehaviour
         NPCClick = false;
     }
 
-    void InteractMouse()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+    public abstract void InteractMouse();
+    //{
+    //    //if (Input.GetMouseButtonDown(0))
+    //    //{
+    //    //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //    //    RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit))
-            {
-                switch (hit.collider.tag)
-                {
-                    case "QuestGiver":
-                        if (!NPCClick)
-                            QuestGiverMenuOn();
-                        else
-                            QuestGiverMenuOff();
-                        //Debug.Log("Quest giver clicked");
-                        break;
-                    case "NPCTalk":
-                        if (!NPCClick)
-                            ShopGiverMenuOn();
-                        else
-                            ShopGiverMenuOff();
-                        //Debug.Log("Quest giver clicked");
-                        break;
-                    default:
-                        break;
+    //    //    if (Physics.Raycast(ray, out hit))
+    //    //    {
+    //    //        switch (hit.collider.tag)
+    //    //        {
+    //    //            case "QuestGiver":
+    //    //                if (!NPCClick)
+    //    //                    QuestGiverMenuOn();
+    //    //                else
+    //    //                    QuestGiverMenuOff();
+    //    //                //Debug.Log("Quest giver clicked");
+    //    //                break;
+    //                case "QuestGiver2":
+    //                    if (!NPCClick)
+    //                        QuestGiverMenuOn();
+    //                    else
+    //                        QuestGiverMenuOff();
+    //                    //Debug.Log("Quest giver clicked");
+    //                    break;
+    //                case "NPCTalk":
+    //                    if (!NPCClick)
+    //                        ShopGiverMenuOn();
+    //                    else
+    //                        ShopGiverMenuOff();
+    //                    //Debug.Log("Quest giver clicked");
+    //                    break;
+    //                default:
+    //                    break;
 
-                }
-            }
+    //            }
+    //        }
 
-        }
+    //    }
 
-    }
+    //}
 
     //void OnTriggerExit(Collider other)
     //{
