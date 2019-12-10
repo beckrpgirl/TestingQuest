@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QUIM: {fileID: 0}
   alison: {fileID: 0}
-  QuestName: 
-  Description: 
-  NPCID: 
+  QuestName: Tim
+  Description: Find The Child
+  Prereq1: Slayer 2
+  Prereq2: NULL
+  NPCID: greatwood
   ExperenceReward: 0
-  RequiredAmount: 0
+  RequiredAmount: 1
   CoinReward: 0
-  StartQuestText: 
-  TrackingQuestText: 
-  InprogressQuestText: 
-  CompletedQuestText: 
+  StartQuestText: Find My Child!
+  TrackingQuestText: Find The Child, Fast!
+  InprogressQuestText: Have you found my youngling?!?
+  CompletedQuestText: thanks

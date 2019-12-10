@@ -10,18 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ecc7c01bd33d584db36403c1c8ef49f, type: 3}
-  m_Name: GetWood
+  m_Name: Slayer
   m_EditorClassIdentifier: 
   QUIM: {fileID: 0}
   alison: {fileID: 0}
-  QuestName: Woods
-  Description: collecting
-  PreviousQuestName: NULL
+  QuestName: Slayer
+  Description: Kill Bandits
+  Prereq1: GetWood
+  Prereq2: GetWood2
   NPCID: wood
   ExperenceReward: 0
   RequiredAmount: 3
-  CoinReward: 1000
-  StartQuestText: Hey we need more wood
-  TrackingQuestText: Collect wood
-  InprogressQuestText: Got Wood?
-  CompletedQuestText: Thanks for wood!
+  CoinReward: 100
+  StartQuestText: Hello kill wood
+  TrackingQuestText: kill Wood!
+  InprogressQuestText: did you get it
+  CompletedQuestText: thanks

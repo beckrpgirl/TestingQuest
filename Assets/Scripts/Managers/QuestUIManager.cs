@@ -38,7 +38,7 @@ public class QuestUIManager : MonoBehaviour
         TextDetails.text = "Quest log is currently empty.";
         TextTally.text = " ";
         NPCBoxOne.text = "Welcome Alison";
-        NPCBoxTwo.text = "Thank you for your help.";
+        NPCBoxTwo.text = "No Quests Avaailable";
     }
 
     public void PlayerLogOpen()

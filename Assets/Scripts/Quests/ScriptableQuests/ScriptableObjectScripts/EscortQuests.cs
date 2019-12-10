@@ -26,6 +26,7 @@ public class EscortQuests : Quests
         {
             QUIM.NPCBoxTwo.text = StartQuestText;
         }
+        Debug.Log("StartText " + QuestName);
     }
     public override void TrackingQuest()
     {
@@ -33,8 +34,16 @@ public class EscortQuests : Quests
         if (QUIM)
         {
             QUIM.TextDetails.text = TrackingQuestText;
-            QUIM.TextTally.text = this.CurrentAmount + " / " + RequiredAmount;
+            if (Completed)
+            {
+                QUIM.TextTally.text = "Completed";
+            }
+            else
+            {
+                QUIM.TextTally.text = this.CurrentAmount + " / " + RequiredAmount;
+            }
         }
+        //Debug.Log("Tracking Quest" + QuestName);
     }
     public override void InprogressText()
     {
@@ -43,6 +52,7 @@ public class EscortQuests : Quests
         {
             QUIM.NPCBoxTwo.text = InprogressQuestText;
         }
+        Debug.Log("In Progress " + QuestName);
     }
     public override void CompletedText()
     {
@@ -51,5 +61,6 @@ public class EscortQuests : Quests
         {
             QUIM.NPCBoxTwo.text = CompletedQuestText;
         }
+        Debug.Log("Completed Text" + QuestName);
     }
 }

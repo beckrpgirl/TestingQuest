@@ -95,7 +95,7 @@ MonoBehaviour:
   inventory: {fileID: 0}
   item: {fileID: 0}
   amount: 1
-  duration: 60
+  duration: 2
   Cost: 0
 --- !u!65 &1460980644756745594
 BoxCollider:

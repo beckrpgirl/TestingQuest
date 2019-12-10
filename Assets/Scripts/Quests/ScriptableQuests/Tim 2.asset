@@ -9,19 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ecc7c01bd33d584db36403c1c8ef49f, type: 3}
-  m_Name: NewKillingQuest
+  m_Script: {fileID: 11500000, guid: cce67f4de2bce3045b91535831afe838, type: 3}
+  m_Name: Tim 2
   m_EditorClassIdentifier: 
   QUIM: {fileID: 0}
   alison: {fileID: 0}
-  QuestName: Slayer
-  Description: Kill Bandits
-  PreviousQuestName: NULL
-  NPCID: wood
+  QuestName: Tim
+  Description: Find The Child
+  Prereq1: Tim
+  Prereq2: NULL
+  NPCID: greatwood
   ExperenceReward: 0
-  RequiredAmount: 3
-  CoinReward: 100
-  StartQuestText: Hello kill wood
-  TrackingQuestText: kill Wood!
-  InprogressQuestText: did you get it
+  RequiredAmount: 2
+  CoinReward: 0
+  StartQuestText: OH YEAH! I HAVE 2 OTHER BRATS!
+  TrackingQuestText: Find The Children, Faster!!!
+  InprogressQuestText: Have you found my younglings?!?
   CompletedQuestText: thanks

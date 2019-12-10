@@ -57,7 +57,7 @@ public class QuestGiver : NPCController
         
         Quest = QuestList[i];
         //checking to see if valid 
-        if (QM.searchCQNList(QuestList[i].PreviousQuestName))
+        if (QM.searchCQNList(QuestList[i].Prereq1) && QM.searchCQNList(QuestList[i].Prereq2))
         {
             AssignedQuest = true;
             Quest.Load();
@@ -111,8 +111,9 @@ public class QuestGiver : NPCController
         if (QUIM)
         {
             QUIM.NPCBoxOne.text = "Welcome to Wonderland!";
-            QUIM.NPCBoxTwo.text = "Thanks for all your help again.";
+            QUIM.NPCBoxTwo.text = "No Available Quests";
         }
+        Debug.Log("No Quest Got");
     }
 
 //FUNCTION : OnTriggerExit
