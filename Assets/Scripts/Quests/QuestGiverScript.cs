@@ -49,16 +49,25 @@ public class QuestGiverScript : MonoBehaviour
     void AssignQuest()
     {
 
-        Quest = QuestList[i];
+
         //checking to see if valid 
-        if (QM.searchCQNList(QuestList[i].Prereq1) && QM.searchCQNList(QuestList[i].Prereq2))
+
+        for (int i = 0; i < QuestList.Count - 1; i++)
         {
-            AssignedQuest = true;
-            Quest.Load();
-            Quest.StartText();
+            if(!QM.searchCQNList(QuestList[i].QuestName))
+            {
+                if (QM.searchCQNList(QuestList[i].Prereq1) && QM.searchCQNList(QuestList[i].Prereq2))
+                {
+                    Quest = QuestList[i];
+
+                    AssignedQuest = true;
+                    Quest.Load();
+                    Quest.StartText();
+                    return;
+                }
+            }
         }
-        else
-            NoMoreQuest();
+        NoMoreQuest();
     }
 
     //FUNCTION : CheckQuest
