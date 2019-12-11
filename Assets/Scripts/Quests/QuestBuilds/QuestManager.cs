@@ -31,6 +31,10 @@ public class QuestManager: MonoBehaviour
                 isMatch = true;
                 break;
             }
+            else
+            {
+                isMatch = false;
+            }
         }
         return isMatch;
     }
