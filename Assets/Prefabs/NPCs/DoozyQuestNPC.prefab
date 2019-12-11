@@ -325,6 +325,8 @@ GameObject:
   - component: {fileID: 2436738080331753258}
   - component: {fileID: 5172665582004260111}
   - component: {fileID: 1589245351}
+  - component: {fileID: 1856581526}
+  - component: {fileID: 2615836405125864438}
   m_Layer: 0
   m_Name: DoozyQuestNPC
   m_TagString: QuestGiver
@@ -412,12 +414,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestTextBox: {fileID: 0}
   ShopTextBox: {fileID: 0}
+  NPCClick: 0
   Alison: {fileID: 0}
-  quests: {fileID: 0}
-  QuestNames:
-  - WinterIsComing
-  - Rescue
-  - Slayer
+--- !u!114 &1856581526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172665581333476532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0e09f7a50617d2429d14774807387bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuestList:
+  - {fileID: 11400000, guid: 539f7a3c42dd9bb40947e74dd4f7bc54, type: 2}
+  - {fileID: 11400000, guid: 2ba051c4785d83f4aabaca6843a6525a, type: 2}
+  - {fileID: 11400000, guid: cc1264ed1902ed5409a8300e91cd2ea2, type: 2}
+--- !u!114 &2615836405125864438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5172665581333476532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7b39042eef784340b1b34f20a931e6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  completedQuestNames: []
 --- !u!1 &5172665581333476534
 GameObject:
   m_ObjectHideFlags: 0

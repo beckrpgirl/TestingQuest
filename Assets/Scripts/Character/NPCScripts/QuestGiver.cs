@@ -52,13 +52,13 @@ public class QuestGiver : NPCController
                             QuestGiverMenuOff();
                         //Debug.Log("Quest giver clicked");
                         break;
-                    case "QuestGiver2":
-                        if (!NPCClick)
-                            QuestGiverMenuOn();
-                        else
-                            QuestGiverMenuOff();
-                        //Debug.Log("Quest giver clicked");
-                        break;
+                    //case "QuestGiver2":
+                    //    if (!NPCClick)
+                    //        QuestGiver2MenuOn();
+                    //    else
+                    //        QuestGiver2MenuOff();
+                    //    //Debug.Log("Quest giver2 clicked");
+                    //    break;
                     default:
                         break;
 

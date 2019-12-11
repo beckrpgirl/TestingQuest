@@ -39,6 +39,17 @@ public abstract class NPCController : MonoBehaviour
         QuestTextBox.SetActive(false);
         NPCClick = false;
     }
+    //public void QuestGiver2MenuOn()
+    //{
+    //    QuestTextBox2.SetActive(true);
+    //    NPCClick = true;
+    //    Interact();
+    //}
+    //public void QuestGiver2MenuOff()
+    //{
+    //    QuestTextBox2.SetActive(false);
+    //    NPCClick = false;
+    //}
 
     public abstract void InteractMouse();
     //{

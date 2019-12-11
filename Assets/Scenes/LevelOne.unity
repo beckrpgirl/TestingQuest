@@ -2167,56 +2167,13 @@ PrefabInstance:
       value: DoozyQuestNPC
       objectReference: {fileID: 0}
     - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-      propertyPath: QuestNames.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-      propertyPath: QuestList.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-      propertyPath: Alison
-      value: 
-      objectReference: {fileID: 3351953}
-    - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-      propertyPath: QuestNames.Array.data[0]
-      value: NewKillingQuest
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-      propertyPath: QuestNames.Array.data[1]
-      value: Rescue
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-      propertyPath: QuestNames.Array.data[2]
-      value: Slayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-      propertyPath: NPCTextBox
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-      propertyPath: quests
-      value: 
-      objectReference: {fileID: 1463548610}
-    - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
       propertyPath: QuestTextBox
       value: 
       objectReference: {fileID: 1590963292}
     - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-      propertyPath: QuestList.Array.data[0]
+      propertyPath: Alison
       value: 
-      objectReference: {fileID: 11400000, guid: 539f7a3c42dd9bb40947e74dd4f7bc54,
-        type: 2}
-    - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-      propertyPath: QuestList.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 2ba051c4785d83f4aabaca6843a6525a,
-        type: 2}
-    - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-      propertyPath: QuestList.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: cc1264ed1902ed5409a8300e91cd2ea2,
-        type: 2}
+      objectReference: {fileID: 3351953}
     - target: {fileID: 5172665581333309588, guid: 76eacd0021a94974caed86ef69fbdbe1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2272,6 +2229,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2615836405125864438, guid: 76eacd0021a94974caed86ef69fbdbe1,
+        type: 3}
+      propertyPath: nextQuestGiver
+      value: 
+      objectReference: {fileID: 524445866}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
 --- !u!1001 &114950247
@@ -10440,11 +10402,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: VillagerBlackSmith
       objectReference: {fileID: 0}
-    - target: {fileID: 5415270150931694263, guid: 3c7f245e132ccd743a0ee1b7df418442,
-        type: 3}
-      propertyPath: m_TagString
-      value: QuestGiver2
-      objectReference: {fileID: 0}
     - target: {fileID: 5415270150931275607, guid: 3c7f245e132ccd743a0ee1b7df418442,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10500,6 +10457,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 524445867, guid: 3c7f245e132ccd743a0ee1b7df418442, type: 3}
+      propertyPath: Alison
+      value: 
+      objectReference: {fileID: 3351953}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c7f245e132ccd743a0ee1b7df418442, type: 3}
 --- !u!1001 &517337479
@@ -10677,56 +10638,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 517168287}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &524445867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524445866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94d101378d1b5234db7712e01308a42c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  QuestTextBox: {fileID: 0}
-  ShopTextBox: {fileID: 0}
-  NPCClick: 0
-  Alison: {fileID: 3351953}
---- !u!114 &524445868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524445866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e09f7a50617d2429d14774807387bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  QuestList:
-  - {fileID: 11400000, guid: 006d6d1d94f83824b90d9e26f1652c6b, type: 2}
-  - {fileID: 11400000, guid: 8b97cea14983c324c9d5a730fd5239bd, type: 2}
-  - {fileID: 11400000, guid: ad773f6e5b96d1f498aec086efcc5068, type: 2}
---- !u!143 &524445871
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 524445866}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &528530239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39836,22 +39747,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 114892669}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1856581526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856581525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e09f7a50617d2429d14774807387bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  QuestList:
-  - {fileID: 11400000, guid: 539f7a3c42dd9bb40947e74dd4f7bc54, type: 2}
-  - {fileID: 11400000, guid: 2ba051c4785d83f4aabaca6843a6525a, type: 2}
-  - {fileID: 11400000, guid: cc1264ed1902ed5409a8300e91cd2ea2, type: 2}
 --- !u!1001 &1860197401
 PrefabInstance:
   m_ObjectHideFlags: 0
