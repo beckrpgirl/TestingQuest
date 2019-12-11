@@ -6,7 +6,6 @@ public abstract class NPCController : MonoBehaviour
 {
 
     public GameObject QuestTextBox;
-    //public GameObject ShopTextBox;
     public bool NPCClick = false;
 
     public Transform Alison;
@@ -39,82 +38,8 @@ public abstract class NPCController : MonoBehaviour
         QuestTextBox.SetActive(false);
         NPCClick = false;
     }
-    //public void QuestGiver2MenuOn()
-    //{
-    //    QuestTextBox2.SetActive(true);
-    //    NPCClick = true;
-    //    Interact();
-    //}
-    //public void QuestGiver2MenuOff()
-    //{
-    //    QuestTextBox2.SetActive(false);
-    //    NPCClick = false;
-    //}
 
     public abstract void InteractMouse();
-    //{
-    //    //if (Input.GetMouseButtonDown(0))
-    //    //{
-    //    //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-    //    //    RaycastHit hit;
-
-    //    //    if (Physics.Raycast(ray, out hit))
-    //    //    {
-    //    //        switch (hit.collider.tag)
-    //    //        {
-    //    //            case "QuestGiver":
-    //    //                if (!NPCClick)
-    //    //                    QuestGiverMenuOn();
-    //    //                else
-    //    //                    QuestGiverMenuOff();
-    //    //                //Debug.Log("Quest giver clicked");
-    //    //                break;
-    //                case "QuestGiver2":
-    //                    if (!NPCClick)
-    //                        QuestGiverMenuOn();
-    //                    else
-    //                        QuestGiverMenuOff();
-    //                    //Debug.Log("Quest giver clicked");
-    //                    break;
-    //                case "NPCTalk":
-    //                    if (!NPCClick)
-    //                        ShopGiverMenuOn();
-    //                    else
-    //                        ShopGiverMenuOff();
-    //                    //Debug.Log("Quest giver clicked");
-    //                    break;
-    //                default:
-    //                    break;
-
-    //            }
-    //        }
-
-    //    }
-
-    //}
-
-    //void OnTriggerExit(Collider other)
-    //{
-    //    if(other.gameObject.tag == "Player")
-    //    {
-            
-    //        //ShopGiverMenuOff();
-    //        QuestGiverMenuOff();
-    //    }
-    //}
-
-    //void ShopGiverMenuOn()
-    //{
-    //    ShopTextBox.SetActive(true);
-    //    NPCClick = true;
-    //    Interact();
-    //}
-    //public void ShopGiverMenuOff()
-    //{
-    //    ShopTextBox.SetActive(false);
-    //    NPCClick = false;
-    //}
-
 
     public void LookAt()
     {
