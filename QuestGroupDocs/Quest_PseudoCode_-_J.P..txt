@@ -1,0 +1,30 @@
+Header Files
+
+Parent Class (Quest)
+{
+	create an id for the UI script.
+	create an id for the player.
+
+	call the list of goals and make a new instance of the list.
+	get/set variable for the string thats the name of the quest.
+	get/set variable for the string thats the description of the quest.
+	get/set variable for the string for the name of the NPC that the quest is for.
+	get/set variable for the bool that checks to see if the quest has bee
+	get/set variable for the integer ammount for experience gained.
+	get/set variable for the integer ammount for Quest Tasks completed.
+	get/set variable for the current integer ammount for Quest Tasks completed.
+	get/set variable for the integer ammount for the currency reward.
+	
+	set abstract functions for the quest starting text, the text tracking the quest, in progress text, and completed text.
+
+	on start, set the id's for the UI script and Player script.
+
+	create the function to check the goals completed.
+	{
+
+	}
+	create the function that gives the currency/experience reward for the quest.
+	{
+
+	}
+}

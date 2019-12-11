@@ -1,0 +1,28 @@
+Header Files
+
+Public Class QuestGoal
+{
+declare variables for
+
+Set quest
+string description
+bool completed
+int current amount
+int required amount
+int coin reward
+
+Public virtual void Init()
+{
+default init stuff
+}
+
+public void Evaluate
+{
+code to see if the player has the amount they need to complete quest
+}
+
+public void complete
+(
+code to complete quests of the above conditions are met
+}
+}

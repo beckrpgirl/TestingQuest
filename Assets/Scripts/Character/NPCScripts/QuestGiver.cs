@@ -13,7 +13,7 @@ public class QuestGiver : NPCController
     //UI and Quests.cs to link to
     //QuestUIManager QUIM;
     //QuestManager QM;
-    QuestGiverScript QGS;
+    DoozyNPC DNPC;
 
     //public Quests Quest { get; set; }
     //public bool AssignedQuest { get; set; } //Has quest been assigned
@@ -26,12 +26,12 @@ public class QuestGiver : NPCController
     {
         //QUIM = FindObjectOfType<QuestUIManager>();
         //QM = FindObjectOfType<QuestManager>();
-        QGS = FindObjectOfType<QuestGiverScript>();
+        DNPC = GetComponent<DoozyNPC>();
     }
     //Interact function from the NPC controller.
     public override void Interact()
     {
-        QGS.OnInteract();
+        DNPC.OnInteract();
         Debug.Log(tag);
     }
     public override void InteractMouse()
@@ -47,18 +47,14 @@ public class QuestGiver : NPCController
                 {
                     case "QuestGiver":
                         if (!NPCClick)
+                        {
                             QuestGiverMenuOn();
+                        }
                         else
+                        {
                             QuestGiverMenuOff();
-                        //Debug.Log("Quest giver clicked");
+                        }
                         break;
-                    //case "QuestGiver2":
-                    //    if (!NPCClick)
-                    //        QuestGiver2MenuOn();
-                    //    else
-                    //        QuestGiver2MenuOff();
-                    //    //Debug.Log("Quest giver2 clicked");
-                    //    break;
                     default:
                         break;
 

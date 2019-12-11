@@ -108,7 +108,7 @@ public class ShopNPC : NPCController
     {
         if (other.gameObject.tag == "Player")
         {
-           ShopGiverMenuOff();
+           //ShopGiverMenuOff();
         }
     }
 }

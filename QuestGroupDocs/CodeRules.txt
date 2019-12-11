@@ -1,0 +1,23 @@
+Class Naming system:
+Root Class -> WildAnimals
+Child Class -> WZebras
+
+function names -> RunningAnimals
+varables -> varNames
+
+
+File Header:
+//FILE : filename
+//PROJECT : Will of the Woods
+//PROGRAMMER : name
+//FIRST VERSION : DD/12/2019
+
+Class Header:
+//NAME : className
+//PURPOSE : what the class is for
+
+Function Header:
+//FUNCTION : functionName
+//DESCRIPTION : what the function is for
+//PARAMETERS : types and names
+//RETURNS : type and use

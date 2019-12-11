@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QUIM: {fileID: 0}
   alison: {fileID: 0}
-  QuestName: Slayer
+  QuestName: Slayer2
   Description: Kill Bandits
   Prereq1: Slayer
   Prereq2: NULL

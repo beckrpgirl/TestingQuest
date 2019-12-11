@@ -1,0 +1,24 @@
+
+Header Files
+
+Child Class (Quest Example: Rescue)
+{
+	Reference id for the NPC that is to be rescued.
+
+	on awake:
+
+	-set quest name variable.
+	-set description of the quest.
+	-set name of the NPC being saved.
+	-set ammount of experience rewarded.
+	-set the ammount of tasks required to complete the quest.
+	-set the current ammount of tasks completed.
+	-set the ammount for the currency reward.
+	
+	-add to the list of goals and set the perameters for the goals to be met.
+
+	create an if statement that checks to see if the NPC is needed anymore.
+
+	create the override functions for for the text that is needed in the UI for: 
+	Tracking of the quest, currently in progress tasks, and when completed.
+}

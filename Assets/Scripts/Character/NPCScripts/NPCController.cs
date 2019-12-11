@@ -6,7 +6,7 @@ public abstract class NPCController : MonoBehaviour
 {
 
     public GameObject QuestTextBox;
-    public GameObject ShopTextBox;
+    //public GameObject ShopTextBox;
     public bool NPCClick = false;
 
     public Transform Alison;
@@ -103,17 +103,17 @@ public abstract class NPCController : MonoBehaviour
     //    }
     //}
 
-    void ShopGiverMenuOn()
-    {
-        ShopTextBox.SetActive(true);
-        NPCClick = true;
-        Interact();
-    }
-    public void ShopGiverMenuOff()
-    {
-        ShopTextBox.SetActive(false);
-        NPCClick = false;
-    }
+    //void ShopGiverMenuOn()
+    //{
+    //    ShopTextBox.SetActive(true);
+    //    NPCClick = true;
+    //    Interact();
+    //}
+    //public void ShopGiverMenuOff()
+    //{
+    //    ShopTextBox.SetActive(false);
+    //    NPCClick = false;
+    //}
 
 
     public void LookAt()

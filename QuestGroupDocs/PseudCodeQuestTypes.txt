@@ -1,0 +1,21 @@
+Header files
+
+class (quest type)
+{
+ Grab item id
+{
+public quest type class  (string item id, string description, bool completed, in current amount, int required amount)
+{ 
+code for parameters above
+}
+public override init
+{ 
+end quest if complete conditions met
+}
+
+public void for items collected(quest items ID)
+{
+code for tracking items collected
+}
+}
+}

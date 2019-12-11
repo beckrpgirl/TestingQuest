@@ -1,0 +1,8 @@
+Header Files
+class QuestEvents
+{
+    public delegate void EnemyEventHandler(IQuestID enemy);
+    public static event EnemyEventHandler EndEvent;
+
+    public static void EnemyDied(IQuestID enemy)
+}

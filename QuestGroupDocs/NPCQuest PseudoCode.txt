@@ -1,0 +1,41 @@
+Header Files
+
+class NPCQuestGiver
+
+    public bool AssignedQuest { get; set; }
+    public bool Helped { get; set; } //quest to hand in
+    [SerializeField]
+    private GameObject quests;
+    public string[] QuestNames;
+    int i = 0;
+    public Quest Quest { get; set; }
+
+    void Awake()
+    {
+		set anything needing to be found in game like UI
+
+    }
+    public override void Interact()
+    {
+        Find out if player is on a quest, and if not give quest, and if so, have the finished or not
+    }
+
+    void AssignQuest()
+    {
+		Assigning quest to player
+    }
+
+    void CheckQuest()
+    {
+		checking if quest is done or not
+    }
+
+    void NextQuest()
+    {
+		loading next quest
+	}
+
+    void NoMoreQuest()
+    {
+		text for UI if no more quests are found. 
+    }

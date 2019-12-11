@@ -2234,7 +2234,9 @@ PrefabInstance:
       propertyPath: nextQuestGiver
       value: 
       objectReference: {fileID: 524445866}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2615836405125864438, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
+    - {fileID: 1856581526, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
 --- !u!1001 &114950247
 PrefabInstance:
@@ -10402,10 +10404,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: VillagerBlackSmith
       objectReference: {fileID: 0}
+    - target: {fileID: 5415270150931694263, guid: 3c7f245e132ccd743a0ee1b7df418442,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5415270150931694263, guid: 3c7f245e132ccd743a0ee1b7df418442,
+        type: 3}
+      propertyPath: m_TagString
+      value: QuestGiver2
+      objectReference: {fileID: 0}
     - target: {fileID: 5415270150931275607, guid: 3c7f245e132ccd743a0ee1b7df418442,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 289.9773
+      value: 305.89
       objectReference: {fileID: 0}
     - target: {fileID: 5415270150931275607, guid: 3c7f245e132ccd743a0ee1b7df418442,
         type: 3}
@@ -10461,7 +10473,13 @@ PrefabInstance:
       propertyPath: Alison
       value: 
       objectReference: {fileID: 3351953}
-    m_RemovedComponents: []
+    - target: {fileID: 524445867, guid: 3c7f245e132ccd743a0ee1b7df418442, type: 3}
+      propertyPath: QuestTextBox
+      value: 
+      objectReference: {fileID: 1590963292}
+    m_RemovedComponents:
+    - {fileID: 524445868, guid: 3c7f245e132ccd743a0ee1b7df418442, type: 3}
+    - {fileID: 524445867, guid: 3c7f245e132ccd743a0ee1b7df418442, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3c7f245e132ccd743a0ee1b7df418442, type: 3}
 --- !u!1001 &517337479
 PrefabInstance:
@@ -10638,6 +10656,37 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 517168287}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &524445867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524445866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c171387d1555b27489ed5825b795a7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuestList:
+  - {fileID: 11400000, guid: 006d6d1d94f83824b90d9e26f1652c6b, type: 2}
+  - {fileID: 11400000, guid: 8b97cea14983c324c9d5a730fd5239bd, type: 2}
+  - {fileID: 11400000, guid: ad773f6e5b96d1f498aec086efcc5068, type: 2}
+--- !u!114 &524445868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524445866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae143da3f2411a4db38ee01958d03d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuestTextBox: {fileID: 1590963292}
+  NPCClick: 0
+  Alison: {fileID: 3351953}
 --- !u!1001 &528530239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39747,6 +39796,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 114892669}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1856581526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856581525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a58f66a2a53a348ad90d9e3d224094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuestList:
+  - {fileID: 11400000, guid: 539f7a3c42dd9bb40947e74dd4f7bc54, type: 2}
+  - {fileID: 11400000, guid: 2ba051c4785d83f4aabaca6843a6525a, type: 2}
+  - {fileID: 11400000, guid: cc1264ed1902ed5409a8300e91cd2ea2, type: 2}
 --- !u!1001 &1860197401
 PrefabInstance:
   m_ObjectHideFlags: 0

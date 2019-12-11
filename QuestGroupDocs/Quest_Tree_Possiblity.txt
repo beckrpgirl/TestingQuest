@@ -1,0 +1,49 @@
+
+3 Main Quest types - Weaken Forces Quest/Build Army Quest/Player Benefit Quest
+
+3 Quests Per Type and Per Area - 9 quests in total per area, 27 in total.
+
+						Quest tree possiblity - 
+
+
+							FarmsWF - FarmsBA - FarmsPB	*When one of the quests is complete it unlocks the next in the tree.
+							   |	     |	       |
+							FarmsWF - FarmsBA - FarmsPB	*When one of the areas have been complete, unlock the Mini Boss/Boss Battles.
+							   |	     |	       |
+							FarmsWF - FarmsBA - FarmsPB	*7th Day Battle can happen before other quests have been completed)
+							   |	     |	       |	
+								_    |	  _		*7th Day Battle Quest is the biggest and has the most checks in script,
+								     |			 will check to see if any of the other quests have been complete and if they have,
+								     |			 change how the battle begins. After all checks, start quest with requested perameters.
+								 Mini Boss
+							______________________________
+							lightDWF - lightDBA - lightDPB
+							   |	     |	       |
+							   |	     |	       |
+							lightDWF - lightDBA - lightDPB
+							   |	     |	       |
+							   |	     |	       |
+							lightDWF - lightDBA - lightDPB
+							   |	     |	       |
+							   |	     |	       |
+								_    |	  _
+								     |
+								     |
+								 Mini Boss
+							_____________________________
+							darkDWF  - darkDBA  - darkDPB
+							   |	     |	       |
+							   |	     |	       |
+							   |	     |	       |
+							darkDWF  - darkDBA  - darkDPB
+							   |	     |	       |
+							   |	     |	       |
+							   |	     |	       |
+							darkDWF  - darkDBA  - darkDPB
+							   |	     |	       |
+							   |	     |	       |
+							   |	     |	       |
+								_    |	  _
+								     |
+								     |
+								 Boss Battle
