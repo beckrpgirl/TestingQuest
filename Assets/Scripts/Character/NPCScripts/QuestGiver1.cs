@@ -10,22 +10,11 @@ using UnityEngine;
 //PURPOSE : Controls the handing out and dialog of the character. 
 public class QuestGiver1 : NPCController
 {
-    //UI and Quests.cs to link to
-    //QuestUIManager QUIM;
-    //QuestManager QM;
+
     BobNPC BNPC;
-
-    //public Quests Quest { get; set; }
-    //public bool AssignedQuest { get; set; } //Has quest been assigned
-    //public bool Helped { get; set; } //quest to hand in
-    //public List<Quests> QuestList = new List<Quests>(); //List of quests for NPC
-    //int i = 0; //quest counter
-
 
     void Awake()
     {
-        //QUIM = FindObjectOfType<QuestUIManager>();
-        //QM = FindObjectOfType<QuestManager>();
         BNPC = GetComponent<BobNPC>();
     }
     //Interact function from the NPC controller.

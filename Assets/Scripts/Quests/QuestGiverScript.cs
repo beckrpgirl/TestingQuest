@@ -52,7 +52,7 @@ public class QuestGiverScript : MonoBehaviour
 
         //checking to see if valid 
 
-        for (int i = 0; i < QuestList.Count - 1; i++)
+        for (int i = 0; i < QuestList.Count; i++)
         {
             if(!QM.searchCQNList(QuestList[i].QuestName))
             {

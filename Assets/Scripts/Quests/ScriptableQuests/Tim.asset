@@ -16,7 +16,7 @@ MonoBehaviour:
   alison: {fileID: 0}
   QuestName: Tim
   Description: Find The Child
-  Prereq1: Slayer 2
+  Prereq1: Slayer2
   Prereq2: NULL
   NPCID: greatwood
   ExperenceReward: 0

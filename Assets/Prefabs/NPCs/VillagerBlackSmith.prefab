@@ -321,8 +321,6 @@ GameObject:
   - component: {fileID: 5415270150931275607}
   - component: {fileID: 5415270150941061315}
   - component: {fileID: 524445871}
-  - component: {fileID: 524445867}
-  - component: {fileID: 524445868}
   m_Layer: 0
   m_Name: VillagerBlackSmith
   m_TagString: QuestGiver2
@@ -383,38 +381,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.5, z: 0}
---- !u!114 &524445867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5415270150931694263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94d101378d1b5234db7712e01308a42c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  QuestTextBox: {fileID: 0}
-  ShopTextBox: {fileID: 0}
-  NPCClick: 0
-  Alison: {fileID: 0}
---- !u!114 &524445868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5415270150931694263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e09f7a50617d2429d14774807387bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  QuestList:
-  - {fileID: 11400000, guid: 006d6d1d94f83824b90d9e26f1652c6b, type: 2}
-  - {fileID: 11400000, guid: 8b97cea14983c324c9d5a730fd5239bd, type: 2}
-  - {fileID: 11400000, guid: ad773f6e5b96d1f498aec086efcc5068, type: 2}
 --- !u!1 &5415270150931694337
 GameObject:
   m_ObjectHideFlags: 0

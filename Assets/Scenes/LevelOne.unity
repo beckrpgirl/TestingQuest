@@ -2161,6 +2161,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: nextQuestGiver
+      value: 
+      objectReference: {fileID: 524445866}
     - target: {fileID: 5172665581333476532, guid: 76eacd0021a94974caed86ef69fbdbe1,
         type: 3}
       propertyPath: m_Name
@@ -2229,14 +2233,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2615836405125864438, guid: 76eacd0021a94974caed86ef69fbdbe1,
-        type: 3}
-      propertyPath: nextQuestGiver
-      value: 
-      objectReference: {fileID: 524445866}
-    m_RemovedComponents:
-    - {fileID: 2615836405125864438, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
-    - {fileID: 1856581526, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
 --- !u!1001 &114950247
 PrefabInstance:
@@ -10399,6 +10396,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: Alison
+      value: 
+      objectReference: {fileID: 3351953}
+    - target: {fileID: 0}
+      propertyPath: QuestTextBox
+      value: 
+      objectReference: {fileID: 1590963292}
     - target: {fileID: 5415270150931694263, guid: 3c7f245e132ccd743a0ee1b7df418442,
         type: 3}
       propertyPath: m_Name
@@ -10417,7 +10422,7 @@ PrefabInstance:
     - target: {fileID: 5415270150931275607, guid: 3c7f245e132ccd743a0ee1b7df418442,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 305.89
+      value: 290.19
       objectReference: {fileID: 0}
     - target: {fileID: 5415270150931275607, guid: 3c7f245e132ccd743a0ee1b7df418442,
         type: 3}
@@ -10469,17 +10474,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 524445867, guid: 3c7f245e132ccd743a0ee1b7df418442, type: 3}
-      propertyPath: Alison
-      value: 
-      objectReference: {fileID: 3351953}
-    - target: {fileID: 524445867, guid: 3c7f245e132ccd743a0ee1b7df418442, type: 3}
-      propertyPath: QuestTextBox
-      value: 
-      objectReference: {fileID: 1590963292}
-    m_RemovedComponents:
-    - {fileID: 524445868, guid: 3c7f245e132ccd743a0ee1b7df418442, type: 3}
-    - {fileID: 524445867, guid: 3c7f245e132ccd743a0ee1b7df418442, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c7f245e132ccd743a0ee1b7df418442, type: 3}
 --- !u!1001 &517337479
 PrefabInstance:

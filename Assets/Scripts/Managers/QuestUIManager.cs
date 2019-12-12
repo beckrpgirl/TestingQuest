@@ -29,16 +29,14 @@ public class QuestUIManager : MonoBehaviour
     {
         if (QGS && QGS.AssignedQuest)
             QGS.Quest.TrackingQuest();
-        else
-            NoQuestFound();
+        //else
+        //    NoQuestFound();
     }
     
     void NoQuestFound()
     {
         TextDetails.text = "Quest log is currently empty.";
         TextTally.text = " ";
-        NPCBoxOne.text = "Welcome Alison";
-        NPCBoxTwo.text = "No Quests Avaailable";
     }
 
     public void PlayerLogOpen()
