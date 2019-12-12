@@ -11,16 +11,16 @@ using UnityEngine;
 public class QuestGiver1 : NPCController
 {
 
-    BobNPC BNPC;
+    QuestGiverScript QGS;
 
     void Awake()
     {
-        BNPC = GetComponent<BobNPC>();
+        QGS = GetComponent<QuestGiverScript>();
     }
     //Interact function from the NPC controller.
     public override void Interact()
     {
-        BNPC.OnInteract();
+        QGS.OnInteract();
         Debug.Log(tag);
     }
     public override void InteractMouse()

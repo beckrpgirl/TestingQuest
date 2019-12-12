@@ -12,17 +12,17 @@ public class QuestGiver : NPCController
 {
     //UI and Quests.cs to link to
 
-    DoozyNPC DNPC;
+
+    QuestGiverScript QGS;
 
     void Awake()
     {
-
-        DNPC = GetComponent<DoozyNPC>();
+        QGS = GetComponent<QuestGiverScript>();
     }
     //Interact function from the NPC controller.
     public override void Interact()
     {
-        DNPC.OnInteract();
+        QGS.OnInteract();
         Debug.Log(tag);
     }
     public override void InteractMouse()
