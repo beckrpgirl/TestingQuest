@@ -2178,6 +2178,10 @@ PrefabInstance:
       propertyPath: Alison
       value: 
       objectReference: {fileID: 3351953}
+    - target: {fileID: 1589245351, guid: 76eacd0021a94974caed86ef69fbdbe1, type: 3}
+      propertyPath: NPC_UI
+      value: 
+      objectReference: {fileID: 1590963292}
     - target: {fileID: 5172665581333309588, guid: 76eacd0021a94974caed86ef69fbdbe1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10407,7 +10411,7 @@ PrefabInstance:
     - target: {fileID: 5415270150931694263, guid: 3c7f245e132ccd743a0ee1b7df418442,
         type: 3}
       propertyPath: m_Name
-      value: VillagerBlackSmith
+      value: BobQuestNPC
       objectReference: {fileID: 0}
     - target: {fileID: 5415270150931694263, guid: 3c7f245e132ccd743a0ee1b7df418442,
         type: 3}
@@ -10417,7 +10421,7 @@ PrefabInstance:
     - target: {fileID: 5415270150931694263, guid: 3c7f245e132ccd743a0ee1b7df418442,
         type: 3}
       propertyPath: m_TagString
-      value: QuestGiver2
+      value: QuestGiver
       objectReference: {fileID: 0}
     - target: {fileID: 5415270150931275607, guid: 3c7f245e132ccd743a0ee1b7df418442,
         type: 3}
@@ -10660,11 +10664,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 524445866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae143da3f2411a4db38ee01958d03d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 94d101378d1b5234db7712e01308a42c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QuestTextBox: {fileID: 1590963292}
+  NPC_UI: {fileID: 1590963292}
   NPCClick: 0
+  NPCID: 
   Alison: {fileID: 3351953}
 --- !u!114 &524445868
 MonoBehaviour:
@@ -10682,7 +10687,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 006d6d1d94f83824b90d9e26f1652c6b, type: 2}
   - {fileID: 11400000, guid: 8b97cea14983c324c9d5a730fd5239bd, type: 2}
   - {fileID: 11400000, guid: ad773f6e5b96d1f498aec086efcc5068, type: 2}
-  i: 0
 --- !u!1001 &528530239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39808,7 +39812,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 539f7a3c42dd9bb40947e74dd4f7bc54, type: 2}
   - {fileID: 11400000, guid: 2ba051c4785d83f4aabaca6843a6525a, type: 2}
   - {fileID: 11400000, guid: cc1264ed1902ed5409a8300e91cd2ea2, type: 2}
-  i: 0
 --- !u!1001 &1860197401
 PrefabInstance:
   m_ObjectHideFlags: 0

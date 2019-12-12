@@ -11,7 +11,7 @@ public class QuestGiverScript : MonoBehaviour
     public bool AssignedQuest { get; set; } //Has quest been assigned
     public bool Helped { get; set; } //quest to hand in
     public List<Quests> QuestList = new List<Quests>(); //List of quests for NPC
-    public int i = 0; //quest counter
+    private int i = 0; //quest counter
 
 
     void Awake()

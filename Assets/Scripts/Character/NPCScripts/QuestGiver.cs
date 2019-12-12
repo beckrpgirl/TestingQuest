@@ -10,14 +10,14 @@ using UnityEngine;
 //PURPOSE : Controls the handing out and dialog of the character. 
 public class QuestGiver : NPCController
 {
-    //UI and Quests.cs to link to
-
-
+   
     QuestGiverScript QGS;
 
     void Awake()
     {
         QGS = GetComponent<QuestGiverScript>();
+        NPCID = gameObject.name;
+        Debug.Log(NPCID);
     }
     //Interact function from the NPC controller.
     public override void Interact()
@@ -34,21 +34,16 @@ public class QuestGiver : NPCController
 
             if (Physics.Raycast(ray, out hit))
             {
-                switch (hit.collider.tag)
+                if (NPCID == hit.collider.name)
                 {
-                    case "QuestGiver":
-                        if (!NPCClick)
-                        {
-                            QuestGiverMenuOn();
-                        }
-                        else
-                        {
-                            QuestGiverMenuOff();
-                        }
-                        break;
-                    default:
-                        break;
-
+                    if (!NPCClick)
+                    {
+                        QuestGiverMenuOn();
+                    }
+                    else
+                    {
+                        QuestGiverMenuOff();
+                    }
                 }
             }
 

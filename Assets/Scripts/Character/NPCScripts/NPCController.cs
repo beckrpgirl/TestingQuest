@@ -5,13 +5,15 @@ using UnityEngine;
 public abstract class NPCController : MonoBehaviour
 {
 
-    public GameObject QuestTextBox;
+    public GameObject NPC_UI;
     public bool NPCClick = false;
+    public string NPCID;
 
     public Transform Alison;
     
 
     public abstract void Interact();
+    public abstract void InteractMouse();
 
     // Start is called before the first frame update
     void Start()
@@ -29,17 +31,17 @@ public abstract class NPCController : MonoBehaviour
     //Interactions with NPC
     public void QuestGiverMenuOn()
     {
-        QuestTextBox.SetActive(true);
+        NPC_UI.SetActive(true);
         NPCClick = true;
         Interact();
     }
     public void QuestGiverMenuOff()
     {
-        QuestTextBox.SetActive(false);
+        NPC_UI.SetActive(false);
         NPCClick = false;
     }
 
-    public abstract void InteractMouse();
+
 
     public void LookAt()
     {
